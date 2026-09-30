@@ -28,9 +28,33 @@
         .numero {
             text-align: right; 
         }
-        .esquerda {text-align: left;
 
+        .esquerda {
+            text-align: left;
+            vertical-align: top;
+            background-color: bisque;
         }
+
+        .centro {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .direita {
+            text-align: right;
+            vertical-align: top;
+        }
+        .topo {
+            text-align: top;
+            vertical-align: top;
+        }
+        .baixo {
+            text-align: center;
+            vertical-align: bottom;
+        }
+        .linha {
+            background-color: rgb(59, 59, 71);
+        }
+
 
 
     </style>
@@ -43,18 +67,18 @@
 
     <table>
         <tr> 
-            <td class="left" >A1 <br> (Esquerda)</br></td>
-            <td>B1 <br> (Padrão Centro) </td>
-            <td>C1 <br> (Direita) </br> </td>
+            <td class="esquerda" >A1 <br> (Esquerda)</br></td>
+            <td class="centro">B1 <br> (Padrão Centro) </td>
+            <td class="direita">C1 <br> (Direita) </br> </td>
         </tr>
         <tr class="linha">
-            <td>A2 <br>(Topo)</td>
-            <td>B2 <br> (Padrão) </br></td>
+            <td class="topo">A2 <br>(Topo)</td>
+            <td class="centro">B2 <br> (Padrão) </br></td>
             <td class="numero">C2 <br>(Baixo)</td>
         </tr>
         <tr>
-            <td>A3 <br>Topo </br></td>
-            <td>B3 <br>(Baixo)</br> </td>
+            <td class="topo" >A3 <br>Topo </br></td>
+            <td class="baixo">B3 <br>(Baixo)</br> </td>
             <td class="numero">C3 <br>(Padrão)</br></td>
         </tr>
         <tr> 
